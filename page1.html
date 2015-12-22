@@ -2,7 +2,7 @@
     <div class="center">Productos</div>
 </ons-toolbar>
 
-<div class="center" style="background:#333; height:40px;"><input type="search" class="search-input" placeholder="Buscar por código o descripción" onKeyUp="listarproductos(this.value)"></input></div>
+<div class="center" style="background:#333; height:40px;"><input type="search" class="search-input" placeholder="Buscar por código o descripción" id="buscar" onKeyUp="listarproductos($('#buscar').val());"></input></div>
       <ons-list id="listaproductos">
 
         <ons-list-item modifier="chevron">Cargando...</ons-list-item>
