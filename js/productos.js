@@ -25,7 +25,7 @@ if (data.validacion == "ok") {
 productos = data.productos;
 for(i in productos)
 {
-	$('#listaproductos').append('<ons-list-item modifier="chevron"><strong>'+productos[i].codigo+'</strong> '+productos[i].detalle+' <strong>'+productos[i].precio+'</strong></ons-list-item>');
+	$('#listaproductos').append('<ons-list-item><ons-row><ons-col width="15%"><strong>'+productos[i].codigo+'</strong></ons-col> <ons-col width="60%" >'+productos[i].detalle+'</ons-col> <ons-col width="20%"><strong>'+productos[i].precio+'</strong></ons-col></ons-row></ons-list-item>');
 }
 
 
